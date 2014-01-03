@@ -1,2 +1,1 @@
-ns=(1..20).to_a
-puts ns.inject(:lcm)
+puts (1..20).inject(:lcm)
