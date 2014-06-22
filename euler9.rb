@@ -3,7 +3,7 @@ t=false
   (a+1..1000).each do |b|
     (b+1..1000).each do |c|
       if a**2+b**2==c**2 and a+b+c==1000
-        puts "a=#{a} b=#{b} c=#{c} a*b*c=#{a*b*c}"
+        puts "a=#{a} b=#{b} c=#{c} a+b+c=#{a+b+c}"
         t=true
         break if t
       end

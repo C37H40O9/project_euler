@@ -1,13 +1,15 @@
-def poly3()
+def poly3(first, last)
   p=0
-  t=false
-  999.downto(100).each do |i|
-    i.downto(100).each do |k|
+  first.downto(last).each do |i|
+    i.downto(last).each do |k|
       ispol=(i*k)
-      p=ispol if ispol.to_s.eql?(ispol.to_s.reverse) and ispol>p
+      if ispol>p
+        ispolstring=ispol.to_s
+        p=ispol if ispolstring.eql?(ispolstring.reverse)
+      end
     end
   end
   return p
 end
 
-puts poly3
+puts poly3(999, 100)
