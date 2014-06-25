@@ -7,7 +7,7 @@ ary=[1, 1]
   loop do
 
     i.odd? ? i=3*i+1 : i=i/2
-    if ary[i]!=nil
+    if i<1000000 and ary[i]!=nil
       chain+=ary[i]
       break
     end
