@@ -2,7 +2,7 @@ sum=0
 
 def divisors_sum(x)
   sum=0
-  (1..((x>>1)+1)).each { |i| sum+=i if x%i==0}
+  (1..(x>>1)).each { |i| sum+=i if x%i==0}
   sum
 end
 
